@@ -15,7 +15,7 @@ var menu = {
 				this.lastOrder = quantity.toString() + " French Fries- $" + 0.93 * quantity;
                 break;
             default:
-                alert("Sorry, this is not an item.");
+                alert("Sorry, this is not an item. Please try again.");
                 break;
         }
 	}
@@ -36,42 +36,52 @@ if (i<10){
 return i;
 }
 
-document.write("Reciept - Hotshot Shack" + "<br/>" + "<br/>" + "Time: " + h + ":" + m + ":" + s);
-/*
+document.write("Reciept - Hotshot Shack" + "<br/>" + "<br/>" + "Time: " + h + ":" + m + ":" + s); 
+
+document.write("<br/>Orders:<br/>");
+
 function startOrder() {
 var item = prompt("What do you want to order?");
 
 var quantity = prompt("How many?");
 
 menu.ordering(item, quantity);
+
+document.write(menu.lastOrder + "<br/>");
+
+confirmation = confirm("Anything else?");
+}
+
+function startOrder2() {
+var item = prompt("What do you want to order?");
+
+var quantity = prompt("How many?");
+
+menu.ordering(item, quantity);
+
+document.write(menu.lastOrder + "<br/>");
+
+confirmation = confirm("Anything else?");
 }
 
 startOrder();
 
 while (menu.lastOrder === undefined) {
-    alert("Please try again.");
-    var item = prompt("What do you want to order?");
-
-    var quantity = prompt("How many?");
-
-    menu.ordering(item, quantity);
+    startOrder2();
 }
 
-var confirmation = confirm("Anything else?");
-
-while(menu.confirm === true) {
+while(confirmation === true) {
     startOrder();
-    confirmation = confirm("Anything else?");
 }
-*/
-document.write("<br/>Orders:<br/>");
-document.write(menu.lastOrder + "<br/><br/>");
 
 var tax = menu.total * (8/100);
 
 var newTax = tax.toString();
 tax = newTax.substr(0,4);
 tax = parseFloat(tax);
+var newTotal = menu.total.toString();
+menu.total = newTotal.substr(0,4);
+menu.total = parseFloat(menu.total);
 
 document.write("Tax: 8%: $" + tax);
 
