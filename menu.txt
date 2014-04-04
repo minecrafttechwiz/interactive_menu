@@ -1,0 +1,4 @@
+Order       Price   Order #
+
+Hamburgers  $4.99   1
+French Fries  $0.93 2
