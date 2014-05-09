@@ -56,8 +56,6 @@ document.write("Reciept - Hotshot Shack" + "<br/>" + "<br/>" + "Time: " + h + ":
 
 document.write("<br/>Orders:<br/>");
 
-var confirmation;
-
 function startOrder() {
 var item = prompt("What do you want to order?");
 
@@ -67,7 +65,7 @@ menu.ordering(item, quantity);
 
 if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
-	confirmation = true;
+	var confirmation = prompt("Anything else?");
 }
 
 }
