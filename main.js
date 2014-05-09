@@ -1,6 +1,6 @@
 var menu = {
 	total: 0,
-	
+	lastOrder: undefined,
 	order: function(price){
 		this.total += price;
 	},
@@ -31,7 +31,7 @@ var menu = {
 		break;
             default:
                 alert("Sorry, this is not an item. Please try again.");
-                menu.lastOrder = "undefined";
+                this.lastOrder = "undefined";
                 break;
         }
 	}
