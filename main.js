@@ -55,7 +55,7 @@ return i;
 document.write("Reciept - Hotshot Shack" + "<br/>" + "<br/>" + "Time: " + h + ":" + m + ":" + s); 
 
 document.write("<br/>Orders:<br/>");
-
+/*
 function startOrder() {
 var item = prompt("What do you want to order?");
 
@@ -71,7 +71,7 @@ if (menu.lastOrder !== "undefined"){
 }
 
 startOrder();
-
+*/
 while (menu.lastOrder === "undefined") {
     startOrder();
 }
