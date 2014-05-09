@@ -55,7 +55,9 @@ var quantity = prompt("How many?");
 
 menu.ordering(item, quantity);
 
-document.write(menu.lastOrder + "<br/>");
+if (menu.lastOrder !== "undefined"){
+	document.write(menu.lastOrder + "<br/>");
+}
 
 confirmation = confirm("Anything else?");
 }
