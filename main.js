@@ -8,12 +8,19 @@ var menu = {
         switch(item) {
             case "1":
                 this.order(4.99 * quantity);
-				this.lastOrder = quantity.toString() + " Hamburger(s)- $" + 4.99 * quantity;
-				break;
+		this.lastOrder = quantity.toString() + " Hamburger(s)- $" + 4.99 * quantity;
+		break;
             case "2":
                 this.order(0.93 * quantity);
-				this.lastOrder = quantity.toString() + " French Fries- $" + 0.93 * quantity;
+		this.lastOrder = quantity.toString() + " French Fries- $" + 0.93 * quantity;
                 break;
+            case "3":
+            	this.order(0.75 * quantity);
+            	this.lastOrder = quantity.toString() + " Small Soda- $" + 0.75 * quantity;
+            	break;
+            case "4":
+            	this.order(1.25 * quantity);
+            	this.lastOrder = quantity.toString() + " Large Soda- $" + 1.25 * quantity;
             default:
                 alert("Sorry, this is not an item. Please try again.");
                 break;
