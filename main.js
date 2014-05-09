@@ -31,7 +31,7 @@ var menu = {
 		break;
             default:
                 alert("Sorry, this is not an item. Please try again.");
-                this.lastOrder = "undefined";
+                menu.lastOrder = "undefined";
                 break;
         }
 	}
