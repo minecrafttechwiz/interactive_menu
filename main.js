@@ -23,6 +23,7 @@ var menu = {
             	this.lastOrder = quantity.toString() + " Large Soda- $" + 1.25 * quantity;
             default:
                 alert("Sorry, this is not an item. Please try again.");
+                this.lastOrder = undefined;
                 break;
         }
 	}
@@ -59,22 +60,10 @@ document.write(menu.lastOrder + "<br/>");
 confirmation = confirm("Anything else?");
 }
 
-function startOrder2() {
-var item = prompt("What do you want to order?");
-
-var quantity = prompt("How many?");
-
-menu.ordering(item, quantity);
-
-document.write(menu.lastOrder + "<br/>");
-
-confirmation = confirm("Anything else?");
-}
-
 startOrder();
 
 while (menu.lastOrder === undefined) {
-    startOrder2();
+    startOrder();
 }
 
 while(confirmation === true) {
