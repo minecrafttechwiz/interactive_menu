@@ -90,6 +90,14 @@ var newTotal = menu.total.toString();
 menu.total = newTotal.substr(0,4);
 menu.total = parseFloat(menu.total);
 
+if (confirmation === false){
+	var togo = prompt("Would you like it to-go?");
+}
+
+if (togo === true){
+	document.write("This order is to-go. <br/>")
+}
+
 document.write("Tax: 8%: $" + tax);
 
 menu.total = menu.total + tax;
