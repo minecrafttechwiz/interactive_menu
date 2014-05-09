@@ -1,4 +1,6 @@
-Order       Price   Order #
+Order         Price   Order #
 
-Hamburgers  $4.99   1
-French Fries  $0.93 2
+Hamburgers    $4.99   1
+French Fries  $0.93   2
+Small Soda    $0.75   3
+Large Soda    $1.25   4
