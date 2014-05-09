@@ -2,5 +2,7 @@ Order         Price   Order #
 
 Hamburgers    $4.99   1
 French Fries  $0.93   2
-Small Soda    $0.75   3
-Large Soda    $1.25   4
+Small Sodas   $0.75   3
+Large Sodas   $1.25   4
+Tacos         $4.99   5
+Fried Chicken $8.99   6
