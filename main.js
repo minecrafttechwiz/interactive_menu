@@ -1,6 +1,6 @@
 var menu = {
 	total: 0,
-	lastOrder: undefined,
+
 	order: function(price){
 		this.total += price;
 	},
@@ -35,7 +35,7 @@ var menu = {
                 break;
         }
 	}
-	
+
 };
 
 //Reciept
@@ -55,7 +55,7 @@ return i;
 document.write("Reciept - Hotshot Shack" + "<br/>" + "<br/>" + "Time: " + h + ":" + m + ":" + s); 
 
 document.write("<br/>Orders:<br/>");
-/*
+
 function startOrder() {
 var item = prompt("What do you want to order?");
 
@@ -65,13 +65,13 @@ menu.ordering(item, quantity);
 
 if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
-	var confirmation = confirm("Anything else?");
 }
 
+confirmation = confirm("Anything else?");
 }
 
 startOrder();
-*/
+
 while (menu.lastOrder === "undefined") {
     startOrder();
 }
