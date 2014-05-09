@@ -23,7 +23,7 @@ var menu = {
             	this.lastOrder = quantity.toString() + " Large Soda- $" + 1.25 * quantity;
             default:
                 alert("Sorry, this is not an item. Please try again.");
-                this.lastOrder = undefined;
+                this.lastOrder = "undefined";
                 break;
         }
 	}
@@ -62,7 +62,7 @@ confirmation = confirm("Anything else?");
 
 startOrder();
 
-while (menu.lastOrder === undefined) {
+while (menu.lastOrder === "undefined") {
     startOrder();
 }
 
