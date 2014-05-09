@@ -65,7 +65,7 @@ menu.ordering(item, quantity);
 
 if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
-	var confirmation = prompt("Anything else?");
+	var confirmation = confirm("Anything else?");
 }
 
 }
