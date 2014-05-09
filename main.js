@@ -16,11 +16,19 @@ var menu = {
                 break;
             case "3":
             	this.order(0.75 * quantity);
-            	this.lastOrder = quantity.toString() + " Small Soda- $" + 0.75 * quantity;
+            	this.lastOrder = quantity.toString() + " Small Soda(s)- $" + 0.75 * quantity;
             	break;
             case "4":
             	this.order(1.25 * quantity);
-            	this.lastOrder = quantity.toString() + " Large Soda- $" + 1.25 * quantity;
+            	this.lastOrder = quantity.toString() + " Large Soda(s)- $" + 1.25 * quantity;
+            case "5":
+                this.order(4.99 * quantity);
+		this.lastOrder = quantity.toString() + " Taco(s)- $" + 4.99 * quantity;
+		break;
+	    case "6":
+                this.order(8.99 * quantity);
+		this.lastOrder = quantity.toString() + " Fried Chicken- $" + 8.99 * quantity;
+		break;
             default:
                 alert("Sorry, this is not an item. Please try again.");
                 this.lastOrder = "undefined";
