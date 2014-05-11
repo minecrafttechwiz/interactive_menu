@@ -90,7 +90,7 @@ menu.total = newTotal.substr(0,4);
 menu.total = parseFloat(menu.total);
 
 if (confirmation === false){
-	var togo = prompt("Would you like it to-go?");
+	var togo = confirm("Would you like it to-go?");
 }
 
 if (togo === true){
