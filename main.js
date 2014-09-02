@@ -67,10 +67,10 @@ menu.ordering(item, quantity);
 if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
 }
-
-confirmation = confirm("Anything else?");
+if (menu.lastOrder=="undefined"){
+	confirmation = confirm("Anything else?");
 }
-
+}
 startOrder();
 
 while (menu.lastOrder === "undefined") {
