@@ -70,10 +70,9 @@ if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
 	confirmation = confirm("Anything else?");
 }
-}
+
 startOrder();
 
-if(over==false){
 	while (menu.lastOrder === "undefined") {
     startOrder();
 }
@@ -81,8 +80,6 @@ if(over==false){
 while(confirmation === true) {
     startOrder();
 }
-}
-
 var tax = menu.total * (8/100);
 
 var newTax = tax.toString();
