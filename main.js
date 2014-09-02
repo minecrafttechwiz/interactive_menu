@@ -65,12 +65,13 @@ var quantity = prompt("How many?");
 
 menu.ordering(item, quantity);
 }
+
+startOrder();
+
 if (menu.lastOrder !== "undefined"){
 	document.write(menu.lastOrder + "<br/>");
 	confirmation = confirm("Anything else?");
 }
-
-startOrder();
 
 	while (menu.lastOrder === "undefined") {
     startOrder();
