@@ -33,7 +33,6 @@ var menu = {
 		break;
             default:
                 alert("Sorry, this is not an item. Please try again.");
-                var over = confirm("Did you want the order to be over?");
                 this.lastOrder = "undefined";
                 break;
         }
