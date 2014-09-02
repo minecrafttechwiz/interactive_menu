@@ -21,6 +21,7 @@ var menu = {
             case "4":
             	this.order(1.25 * quantity);
             	this.lastOrder = quantity.toString() + " Large Soda(s)- $" + 1.25 * quantity;
+            	break;
             case "5":
                 this.order(4.99 * quantity);
 		this.lastOrder = quantity.toString() + " Taco(s)- $" + 4.99 * quantity;
