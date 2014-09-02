@@ -33,6 +33,7 @@ var menu = {
 		break;
             default:
                 alert("Sorry, this is not an item. Please try again.");
+                var over = confirm("Did you want the order to be over?");
                 this.lastOrder = "undefined";
                 break;
         }
@@ -72,12 +73,14 @@ if (menu.lastOrder !== "undefined"){
 }
 startOrder();
 
-while (menu.lastOrder === "undefined") {
+if(over==false){
+	while (menu.lastOrder === "undefined") {
     startOrder();
 }
 
 while(confirmation === true) {
     startOrder();
+}
 }
 
 var tax = menu.total * (8/100);
